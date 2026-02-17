@@ -1,0 +1,285 @@
+/* index page */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  flex: 1; 
+
+}
+
+.profile-pic{
+  width:150px;
+  border-radius:50%;
+  border:3px solid cyan;
+  box-shadow:0 0 25px cyan;
+}
+
+.glow{
+  font-size:2.5em;
+  color:#fff;
+  text-shadow:0 0 10px cyan, 0 0 20px cyan;
+}
+
+.socials a{
+  display:inline-block;
+  margin:10px;
+  padding:10px 20px;
+  border:1px solid cyan;
+  border-radius:30px;
+  color:cyan;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.socials a:hover{
+  background:cyan;
+  color:black;
+  box-shadow:0 0 15px cyan;
+}
+
+.skills{
+  margin-top:50px;
+}
+
+.skill{
+  margin:20px auto;
+  width:80%;
+  max-width:500px;
+  text-align:left;
+}
+
+.bar{
+  background:#111;
+  height:15px;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.bar div{
+  height:100%;
+  background:cyan;
+  box-shadow:0 0 10px cyan;
+}
+
+/* nav css */
+
+nav{
+  margin-bottom:40px;
+}
+
+nav a{
+  margin:0 15px;
+  color:cyan;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  text-shadow:0 0 10px cyan;
+}
+
+/* about me page */
+
+nav a{
+  color:cyan;
+  text-decoration:none;
+  font-size:14px;
+  position:relative;
+}
+
+nav a::after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  background:cyan;
+  left:0;
+  bottom:-5px;
+  transition:0.3s;
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+body{
+  padding-top:30px;
+}
+
+.about-grid {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 60px; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.about-img img{
+  width:100%;
+  max-width:300px;
+  border-radius:20px;
+  border:2px solid cyan;
+  box-shadow:0 0 20px cyan;
+}
+
+.highlight{
+  color:cyan;
+  text-shadow:0 0 10px cyan;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:40px;
+}
+
+@media (max-width:768px){
+  .about-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+
+.about-text {
+  flex: 1; 
+}
+
+.about-text h2 {
+  margin-top: 0; 
+  font-size: 3em;
+}
+
+.about-text p {
+  line-height: 1.6; 
+  margin-bottom: 20px;
+}
+
+/* past project */
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  gap:30px;
+}
+
+.project-gallery {
+  display: grid;
+  /* Paksa 3 column yang sama rata saiznya */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+  margin-top: 50px;
+  /* Tambah ni supaya grid duduk tengah kalau skrin besar sangat */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-item{
+  text-align:center;
+  transition:0.3s;
+}
+
+.project-item img{
+  width:100%;
+  border-radius:15px;
+  border:2px solid cyan;
+  box-shadow:0 0 15px cyan;
+}
+
+.project-item h3{
+  margin-top:15px;
+  color:white;
+  transition:0.3s;
+}
+
+.project-item:hover{
+  transform:scale(1.05);
+}
+
+.project-item:hover img{
+  box-shadow:0 0 25px cyan;
+}
+
+.project-item:hover h3{
+  color:cyan;
+  text-shadow:0 0 10px cyan;
+}
+
+.project-item img{
+  height:200px;
+  object-fit:cover;
+}
+
+/* Thumbnail */
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-img:hover {
+  transform: scale(1.03);
+}
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal image */
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+
+/* contact me page */
+.contact-card{
+  text-align:center;
+}
+
+.contact-card a{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  border:1px solid cyan;
+  border-radius:20px;
+  color:cyan;
+  text-decoration:none;
+}
+
+.contact-card a:hover{
+  background:cyan;
+  color:black;
+}
+
