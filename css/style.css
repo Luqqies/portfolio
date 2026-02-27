@@ -1,0 +1,470 @@
+/* --- Root Variables & Global Styles --- */
+:root {
+    --primary-color: #26C9B3;
+    --bg-dark: #050709;
+    --card-bg: #0d1117;
+    --modal-bg: #111827;
+    --text-muted: #a0a0a0;
+    --transition: all 0.4s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding-top: 100px;
+}
+
+/* --- Navigation --- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(5, 7, 9, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(38, 201, 179, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.custom-logo {
+    height: 80px; 
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section Fix (Luqman x Hazwan Style) --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Tukar ke center supaya ada balance */
+    padding: 100px 10%;
+    min-height: 85vh;
+    gap: 100px; /* Ini kunci utama: Jarakkan teks dan gambar profil */
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.greeting {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 4rem; /* Kecilkan sikit supaya lebih clean */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.sub-text {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    max-width: 550px;
+    line-height: 1.7;
+}
+
+/* Butang Ikut Rujukan */
+.hero-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 30px; /* Padding lebih mampat */
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+.btn-solid {
+    background-color: var(--primary-color);
+    color: #000;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-solid:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(38, 201, 179, 0.4);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border lebih halus */
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary-color);
+    background: rgba(38, 201, 179, 0.05);
+}
+
+/* Gambar Profil dengan Kesan Glow */
+.hero-image {
+    position: relative;
+}
+
+.oval-frame {
+    width: 380px; /* Lebar sikit */
+    height: 520px;
+    border-radius: 190px;
+    overflow: hidden;
+    border: 1px solid rgba(38, 201, 179, 0.3);
+    /* Kesan Glow macam rujukan */
+    box-shadow: 0 0 60px rgba(38, 201, 179, 0.15); 
+    z-index: 2;
+}
+
+/* Bulatan Cahaya kat belakang gambar */
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    height: 110%;
+   
+}
+
+.oval-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Fix */
+@media (max-width: 1100px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .hero-btns {
+        justify-content: center;
+    }
+}
+/* --- Projects Section --- */
+.projects-section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 60px; /* Tambah baris ni untuk jarakkan dari tajuk */
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    border-color: var(--primary-color);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.category-tag {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.view-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Pure CSS Modal (Berdasarkan Gambar Rujukan) --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(8px);
+    z-index: 5000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-window {
+    width: 90%;
+    max-width: 800px;
+    background: var(--modal-bg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-media {
+    position: relative;
+    width: 100%;
+
+}
+
+.modal-media img {
+    width: auto; /* Jangan paksa lebar 100% */
+    max-width: 100%; /* Tapi jangan bagi dia terkeluar skrin */
+    height: auto; /* Biar tinggi ikut saiz asal */
+    max-height: 70vh; /* Hadkan tinggi supaya info kat bawah tak tenggelam */
+    display: block;
+    margin: 0 auto; /* Letak tengah kalau gambar tu kurus */
+    object-fit: contain; /* Pastikan gambar penuh nampak, bukan zoom */
+}
+
+/* Buang aspect-ratio kalau ada pada modal-media */
+.modal-media {
+    position: relative;
+    width: 100%;
+    background: #000; /* Letak background hitam kalau gambar tu saiz pelik */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Butang Close (X) dalam bulatan atas gambar */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.modal-close:hover {
+    background: var(--primary-color);
+}
+
+.modal-info {
+    padding: 30px;
+    text-align: left;
+}
+
+.modal-category {
+    background: rgba(38, 201, 179, 0.15);
+    color: var(--primary-color);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.modal-info h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.modal-info p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* --- About Me Section --- */
+.about-section {
+    padding: 100px 10%;
+    background-color: #080a0c;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+}
+
+.skill-bar {
+    margin-bottom: 30px;
+}
+
+.bar-bg {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* --- Contact Section (2 Kad) --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    padding: 60px 40px;
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: var(--transition);
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.email-btn-pill {
+    display: inline-block;
+    padding: 14px 35px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-row-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    padding: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 40px 10%;
+    background-color: var(--bg-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .hero { flex-direction: column-reverse; text-align: center; }
+    h1 { font-size: 3rem; }
+    .about-container { grid-template-columns: 1fr; }
+    .modal-window { width: 95%; }
+}
