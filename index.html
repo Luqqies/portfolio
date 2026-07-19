@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Luqman Al-Hadee, a web designer and digital content creator based in Malaysia." />
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Luqman Al-Hadee - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="css/css.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="#home">LUQMAN<span>.</span></a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">HOME</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#about">ABOUT ME</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#contact">CONTACTS</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="hero-content">
+      <h1><span id="typeBefore"></span><span id="typeName" class="name-hl"></span><span class="type-cursor" aria-hidden="true">|</span></h1>
+      <p class="hero-subtitle">Web Designer &amp; Digital Content Creator</p>
+      <p class="hero-intro">I create clear, responsive websites and purposeful visual content. I am currently seeking an internship to contribute my web, photography, and creative production skills.</p>
+
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="cv/Luqman-AlHadee-CV.pdf" class="btn btn-secondary" id="cvOpenBtn">View CV</a>
+      </div>
+
+      <!-- Ikon Sosial dikemaskini dengan kelas .icon-social -->
+      <div class="hero-icons">
+        <a href="https://www.linkedin.com/in/luqmanalhadee/" target="_blank" rel="noopener noreferrer" class="icon-social">
+          <img src="img/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/luqqies_man" target="_blank" rel="noopener noreferrer" class="icon-social">
+          <img src="img/instagram.png" alt="Instagram" />
+        </a>
+        <a href="mailto:luqmanalhadee@gmail.com" class="icon-social">
+          <img src="img/email.png" alt="Email" />
+        </a>
+      </div>
+
+     
+    </div>
+
+    <div class="floating-icons">
+      <div class="fi fi-Blen"><img src="img/blender.png" alt="Blender" /></div>
+      <div class="fi fi-pr"><img src="img/premiere-pro.png" alt="Premiere Pro" /></div>
+      <div class="fi fi-ps"><img src="img/photoshop.png" alt="Photoshop" /></div>
+      <div class="fi fi-ae"><img src="img/aftereffect.png" alt="After Effects" /></div>
+      <div class="fi fi-illus"><img src="img/illustrator.png" alt="Illustrator" /></div>
+      <div class="fi fi-dw"><img src="img/dreamweaver.png" alt="Dreamweaver" /></div>
+	  <div class="fi fi-ai"><img src="img/ai.png" alt="Ai" /></div>
+    </div>
+
+    <div class="hero-image">
+      <img src="img/profilehome.png" alt="Luqman" />
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="section-wrap">
+      <span class="section-tag reveal">Work</span>
+      <h2 class="section-title reveal">My <span>Portfolio</span></h2>
+      <div class="purple-bar reveal"></div>
+
+      <!-- Filter Tabs -->
+      <div class="port-filters reveal">
+        <button class="pf-btn active" data-filter="video" aria-pressed="true">Video</button>
+        <button class="pf-btn" data-filter="photography" aria-pressed="false">Photography</button>
+        <button class="pf-btn" data-filter="graphic" aria-pressed="false">Graphic Design</button>
+        <button class="pf-btn" data-filter="animation" aria-pressed="false">Animation</button>
+        <button class="pf-btn" data-filter="ai" aria-pressed="false">AI-Assisted Design</button>
+      </div>
+
+      <div class="port-img-grid">
+
+  
+  <div class="pig-item" data-cat="video" data-title="Video Production" data-desc="Video ini membawa penonton menyelami sejarah pengangkutan tradisional ini, daripada perannya pada awal abad ke-20 sehingga menjadi simbol budaya yang sarat dengan hiasan kreatif pada masa kini." data-youtube="K6kfQ5A3pag">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/video1.png" alt="Video Production" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Video Production</div>
+      <div class="pig-card-title">Beca Melaka Documentary</div>
+      <div class="video-project-details">
+        <div><span>Description</span><p>A documentary exploring the story behind Melaka's trishaw, an iconic symbol of local tourism and culture.</p></div>
+        <div><span>Role</span><p>Videographer</p></div>
+        <div><span>Tools</span><p>Camera, Adobe Premiere Pro</p></div>
+      </div>
+      <div class="pig-card-desc">Dokumentari beca Melaka — kisah di sebalik ikon pelancongan yang unik ini.</div>
+      <div class="pig-play-btn">▶ Watch Video</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="video" data-title="Healing Spots (KL & PJ)" data-desc="Explores urban healing spots in Kuala Lumpur and Petaling Jaya." data-youtube="vI9pqX6G_jw">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/video2.png" alt="Healing Spots" />
+    </div>
+	  
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Video Production</div>
+      <div class="pig-card-title">Healing Spots (KL &amp; PJ)</div>
+      <div class="video-project-details">
+        <div><span>Description</span><p>A travel vlog exploring urban spots to relax and recharge in Kuala Lumpur and Petaling Jaya for Lenscation MY.</p></div>
+        <div><span>Role</span><p>Videographer &amp; Editor</p></div>
+        <div><span>Tools</span><p>Camera, Adobe Premiere Pro</p></div>
+      </div>
+      <div class="pig-card-desc">Travel vlog series exploring urban healing spots in KL &amp; PJ for Lenscation MY.</div>
+      <div class="pig-play-btn">▶ Watch Video</div>
+    </div>
+  </div>
+ 
+   <div class="pig-item" data-cat="photography" data-title="Group Portrait Photography" data-desc="The setting, framed by natural foliage, provides a consistent background that keeps the focus entirely on the group.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/groupphoto.jpg" alt="Framing" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Photography</div>
+      <div class="pig-card-title">Group Portrait Photography</div>
+      <div class="pig-card-desc">A formal group portrait session designed to capture a cohesive and well-composed image.</div>
+      <div class="pig-card-tags"><span class="pig-card-tag">ISO 200</span><span class="pig-card-tag">f/5.6</span><span class="pig-card-tag">1/250s</span><span class="pig-card-tag">28mm</span></div>
+    </div>
+  </div>	  
+		   
+  <div class="pig-item" data-cat="photography" data-title="Framing" data-desc="By utilizing two prominent vertical architectural elements in the foreground, the composition creates a confined visual corridor that directs the viewer's focus immediately to the subject.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/framing.jpg" alt="Framing" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Photography</div>
+      <div class="pig-card-title">Framing</div>
+      <div class="pig-card-desc">Composition using architectural framing to isolate and emphasize the subject.</div>
+      <div class="pig-card-tags"><span class="pig-card-tag">ISO 1600</span><span class="pig-card-tag">f/4.0</span><span class="pig-card-tag">1/100s</span><span class="pig-card-tag">50mm</span></div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="photography" data-title="Isolation" data-desc="This portrait explores themes of reflection and solitude within a serene coastal environment. By positioning the subject in profile, overlooking the calm sea at sunset, the image evokes a sense of introspection and calm.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/isolation.png" alt="Isolation" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Photography</div>
+      <div class="pig-card-title">Isolation</div>
+      <div class="pig-card-desc">Coastal portrait exploring themes of reflection and solitude at sunset.</div>
+      <div class="pig-card-tags"><span class="pig-card-tag">ISO 200</span><span class="pig-card-tag">f/3.5</span><span class="pig-card-tag">1/200s</span><span class="pig-card-tag">45mm</span></div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="photography" data-title="Negative Space" data-desc="This portrait focuses on traditional Malay attire, capturing the intricate details of the Baju Melayu and the patterned Sampin. The composition highlights the textures and cultural significance of the clothing.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/negativespace.jpeg" alt="Negative Space" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Photography</div>
+      <div class="pig-card-title">Negative Space</div>
+      <div class="pig-card-desc">Traditional Malay attire captured with focus on texture and cultural identity.</div>
+      <div class="pig-card-tags"><span class="pig-card-tag">ISO 400</span><span class="pig-card-tag">f/5.6</span><span class="pig-card-tag">1/250s</span><span class="pig-card-tag">35mm</span></div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="photography" data-title="Slow Shutter" data-desc="This image explores the contrast between static presence and fluid motion. By using a long-exposure technique, the subject remains sharp and central, while the figures moving around him are rendered as blurred trails.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/slowshutter.jpeg" alt="Slow Shutter" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Photography</div>
+      <div class="pig-card-title">Slow Shutter</div>
+      <div class="pig-card-desc">Long-exposure study contrasting static presence against fluid motion.</div>
+      <div class="pig-card-tags"><span class="pig-card-tag">ISO 100</span><span class="pig-card-tag">f/11</span><span class="pig-card-tag">1s</span><span class="pig-card-tag">24mm</span></div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="photography" data-title="The Golden Hour" data-desc="Shot during The Golden Hour, the image utilizes the warm, directional sunlight to cast dramatic, long shadows against the textured red masonry. The composition emphasizes the photographer's focus and concentration.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/cinematic.jpg" alt="The Golden Hour" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Photography</div>
+      <div class="pig-card-title">The Golden Hour</div>
+      <div class="pig-card-desc">Golden hour portrait using warm directional light and dramatic shadow play.</div>
+      <div class="pig-card-tags"><span class="pig-card-tag">ISO 640</span><span class="pig-card-tag">f/2.8</span><span class="pig-card-tag">1/320s</span><span class="pig-card-tag">50mm</span></div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="graphic" data-title="Brand Identity" data-desc="This project involves the design of a commercial advertisement for Flaire, a contemporary wig brand. The design strategy centers on a bold and minimalist aesthetic to appeal to a younger, fashion-forward audience.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/mybrand.jpg.jpg" alt="Brand Identity" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Graphic Design</div>
+      <div class="pig-card-title">Brand Identity</div>
+      <div class="pig-card-desc">Bold minimalist ad design for Flaire, a contemporary fashion-forward wig brand.</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="graphic" data-title="Marigold Peel Fresh" data-desc="This project involves the design of a commercial advertisement for Marigold Peel Fresh, focusing on the concept of farm-to-table freshness. The layout combines high-energy visual elements with a serene orchard background.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/peelfresh.jpg" alt="Marigold Peel Fresh" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Graphic Design</div>
+      <div class="pig-card-title">Marigold Peel Fresh</div>
+      <div class="pig-card-desc">Commercial ad design for Marigold Peel Fresh emphasizing farm-to-table freshness.</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="graphic" data-title="Yazoo Chocolate Milkshake" data-desc="This project involves the design of a commercial advertisement for Yazoo, focusing on the sensory appeal of the product. The layout utilizes high-energy, dynamic elements, specifically the chocolate splash, to convey the thick and creamy texture.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/yazoo.jpg.jpg" alt="Yazoo Chocolate Milkshake" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Graphic Design</div>
+      <div class="pig-card-title">Yazoo Chocolate Milkshake</div>
+      <div class="pig-card-desc">Dynamic ad design for Yazoo using chocolate splash to convey rich texture.</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="graphic" data-title="Modern Gaming Sanctuary" data-desc="This project demonstrates proficiency in isometric 3D illustration and spatial planning. The design visualizes a dual-purpose living and gaming space, meticulously laid out to optimize flow and functionality.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/isometric.jpg.jpg" alt="Modern Gaming Sanctuary" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Graphic Design</div>
+      <div class="pig-card-title">Modern Gaming Sanctuary</div>
+      <div class="pig-card-desc">Isometric 3D illustration of a dual-purpose living and gaming space.</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="animation" data-title="2D Lip-Sync Animation" data-desc="This project demonstrates proficiency in 2D animation and precise lip-syncing techniques. The goal was to align character mouth movements accurately with recorded dialogue, ensuring a natural and engaging flow." data-youtube="m4SRd9cxflU">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/animation1.png" alt="2D Lip-Sync" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Animation</div>
+      <div class="pig-card-title">2D Lip-Sync Animation</div>
+      <div class="pig-card-desc">2D animation showcasing precise lip-sync techniques with recorded dialogue.</div>
+      <div class="pig-play-btn">▶ Watch Video</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="animation" data-title="2D Walk Cycle" data-desc="This project focuses on the fundamental principles of animation, specifically the Walk Cycle. The objective was to achieve fluid, believable movement through careful keyframe planning and timing." data-youtube="jsV4bfuGLk8">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/animation2.png" alt="2D Walk Cycle" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Animation</div>
+      <div class="pig-card-title">2D Walk Cycle</div>
+      <div class="pig-card-desc">Walk cycle animation demonstrating fluid, believable character movement.</div>
+      <div class="pig-play-btn">▶ Watch Video</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="animation" data-title="12 Principles of Animation" data-desc="This project explores the fundamental 12 Principles of Animation through an entertaining Countryball narrative. By applying core animation concepts such as Squash and Stretch, Anticipation, and Exaggeration." data-youtube="5-P7Z4HoQwQ">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/animation3.png" alt="Principles of Animation" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Animation</div>
+      <div class="pig-card-title">12 Principles of Animation</div>
+      <div class="pig-card-desc">Countryball narrative exploring the 12 Principles of Animation.</div>
+      <div class="pig-play-btn">▶ Watch Video</div>
+    </div>
+  </div>
+  <div class="pig-item" data-cat="animation" data-title="Motion Graphics Promo" data-desc="This project involved designing a promotional motion graphics piece for a Creative Video Competition within the Digital Video Production (NMC153) course. The aim was to create a dynamic and visually engaging announcement." data-youtube="ET4B1wCa3Ug">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/animation4.jpg" alt="Motion Graphics Promo" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">Animation</div>
+      <div class="pig-card-title">Motion Graphics Promo</div>
+      <div class="pig-card-desc">Promotional motion graphics piece for a Creative Video Competition.</div>
+      <div class="pig-play-btn">▶ Watch Video</div>
+    </div>
+  </div>
+
+  <div class="pig-item" data-cat="ai" data-title="Exit:O Packaging" data-desc="AI-generated product packaging mockup for Exit:O, a diecast toy car brand. Utilized AI image generation to design a dark, mysterious jungle-themed blister pack concept.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/exit0.png" alt="AI Image Generation" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">AI-Assisted Design</div>
+      <div class="pig-card-title">Exit:O Packaging</div>
+      <div class="pig-card-desc">AI-generated product packaging mockup for Exit:O, a diecast toy car brand.</div>
+    </div>
+  </div>
+
+  <div class="pig-item" data-cat="ai" data-title="Cinematic AirPods" data-desc="AI-generated cinematic product shot of AirPods Pro, crafted using prompt engineering to achieve realistic studio lighting, depth of field, and moody atmosphere.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/cinematicphoto.png" alt="AI Image Generation" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">AI-Assisted Design</div>
+      <div class="pig-card-title">Cinematic AirPods</div>
+      <div class="pig-card-desc">AI-generated cinematic product shot of AirPods Pro for promotion.</div>
+    </div>
+  </div>
+
+  <div class="pig-item" data-cat="ai" data-title="Cubre Mi Promotion" data-desc="AI-assisted promotional poster design for Cubre Mi's Raya sale campaign, combining AI-generated layout elements with strategic visual hierarchy to drive engagement.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/cubremipromotion.png" alt="AI Image Generation" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">AI-Assisted Design</div>
+      <div class="pig-card-title">Cubre Mi Promotion</div>
+      <div class="pig-card-desc">AI-assisted promotional poster for Cubre Mi's Raya sale campaign, designed with clear hierarchy and engagement in mind.</div>
+    </div>
+  </div>
+
+  <div class="pig-item" data-cat="ai" data-title="Sunset Photo" data-desc="AI-enhanced cinematic beach portrait during golden hour, using AI tools to elevate colour grading, atmospheric depth, and dramatic sky composition.">
+    <div class="pig-thumb-wrap">
+      <img class="pig-thumb" src="img/sunset.png.jpeg" alt="AI Image Generation" />
+    </div>
+    <div class="pig-card-info">
+      <div class="pig-card-cat">AI-Assisted Design</div>
+      <div class="pig-card-title">Sunset Photo</div>
+      <div class="pig-card-desc">AI-enhanced cinematic beach portrait, refined for warm colour grading and atmospheric depth.</div>
+    </div>
+  </div>
+
+      </div>
+
+      </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lb-backdrop" id="lightbox">
+    <button class="lb-close" id="lbClose">✕</button>
+    <button class="lb-arrow lb-prev" id="lbPrev">&#8249;</button>
+    <div class="lb-content">
+      <div class="lb-img-wrap">
+        <div class="lb-placeholder" id="lbPlaceholder">
+          <div class="lb-ph-icon" id="lbPhIcon">🎬</div>
+        </div>
+        <img class="lb-img" id="lbImg" src="" alt="" style="display:none" />
+        <iframe class="lb-video" id="lbVideo" src="" title="Video player" style="display:none" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="lb-info">
+        <div class="lb-info-title" id="lbTitle"></div>
+        <div class="lb-info-desc" id="lbDesc"></div>
+      </div>
+    </div>
+    <button class="lb-arrow lb-next" id="lbNext">&#8250;</button>
+  </div>
+
+  <!-- CV MODAL -->
+  <div class="lb-backdrop cv-backdrop" id="cvModal">
+    <button class="lb-close" id="cvClose">✕</button>
+    <div class="cv-content">
+      <iframe class="cv-frame" id="cvFrame" src="" title="Luqman Al-Hadee CV"></iframe>
+      <a href="cv/Luqman-AlHadee-CV.pdf" class="btn btn-secondary cv-download" download>Download PDF</a>
+    </div>
+  </div>
+
+  <!-- VIDEO RESUME MODAL -->
+  <div class="lb-backdrop" id="videoResumeModal">
+    <button class="lb-close" id="vrClose" aria-label="Close video resume">&times;</button>
+    <div class="lb-content">
+      <div class="lb-img-wrap">
+        <iframe class="lb-video" id="vrFrame" src="" title="Video Resume" style="display:block" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="section-wrap">
+      <span class="section-tag reveal">Who I Am</span>
+      <h2 class="section-title reveal">About <span>Me</span></h2>
+      <div class="purple-bar reveal"></div>
+      <div class="about-grid reveal">
+        <div class="about-photo">
+          <img src="img/profile.jpg" alt="Luqman" />
+        </div>
+        <div class="about-text">
+          <p>I am Luqman Al-Hadee, a digital media student at <strong>UiTM Melaka, Alor Gajah Campus</strong> with strengths in <strong>web design, photography, video, and visual storytelling</strong>. I enjoy turning ideas into clean, user-friendly digital experiences and capturing moments with my Canon R100 and mobile camera.</p>
+          <div class="lang-section">
+            <div class="lang-label">Languages</div>
+            <div class="lang-badges">
+              <div class="lang-badge">
+                <span class="lang-name">Jawi</span>
+              </div>
+              <div class="lang-badge">
+                <span class="lang-name">Melayu</span>
+              </div>
+              <div class="lang-badge">
+                <span class="lang-name">English</span>
+              </div>
+            </div>
+          </div>
+          <div class="edu-cards">
+            <div class="edu-card">
+              <div class="ec-year">2024 – Present</div>
+              <div class="ec-title">Diploma in Digital Media Communication Technology</div>
+              <div class="ec-school">Universiti Teknologi MARA, Alor Gajah, Melaka</div>
+              <div class="ec-gpa">CGPA: 3.42</div>
+            </div>
+            <div class="edu-card">
+              <div class="ec-year">2023/2024</div>
+              <div class="ec-title">Sijil Pelajaran Malaysia (SPM)</div>
+              <div class="ec-school">SMK PUTRAJAYA PRESINT 5(1)</div>
+            </div>
+          </div>
+
+          <h3 class="about-subheading">Awards &amp; Achievements</h3>
+          <div class="edu-cards award-cards">
+            <div class="edu-card award-card">
+              <div class="ec-year">🏆 2026</div>
+              <div class="ec-title">Bronze Award — MIIEx Competition</div>
+              <div class="ec-school">Melaka International Intellectual Exposition 2026</div>
+            </div>
+            <div class="edu-card award-card">
+              <div class="ec-year">🏆 2026</div>
+              <div class="ec-title">Best Game (Fables) — Folklore Theme</div>
+              <div class="ec-school">Beta Fiesta 2.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-wrap">
+      <span class="section-tag reveal">Expertise</span>
+      <h2 class="section-title reveal">My <span>Skills</span></h2>
+      <div class="purple-bar reveal"></div>
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <img src="img/aftereffect.png" alt="After Effects" />         
+          <div class="sk-name">Adobe After Effects</div>
+        </div>
+        <div class="skill-card">
+          <img src="img/photoshop.png" alt="Photoshop" />          
+          <div class="sk-name">Adobe Photoshop</div>
+        </div>
+        <div class="skill-card">
+          <img src="img/illustrator.png" alt="Illustrator" />
+          <div class="sk-name">Adobe Illustrator</div>
+        </div>
+        <div class="skill-card">
+          <img src="img/dreamweaver.png" alt="Dreamweaver" />
+          <div class="sk-name">Adobe Dreamweaver</div>
+        </div>
+        <div class="skill-card">
+          <img src="img/premiere-pro.png" alt="Premiere Pro" />
+          <div class="sk-name">Adobe Premiere Pro</div>
+        </div>
+        <div class="skill-card">
+          <img src="img/blender.png" alt="Blender" />
+          <div class="sk-name">Blender</div>
+        </div>
+        <div class="skill-card skill-card-ai">
+          <img src="img/ai.png" alt="AI Tools" />
+          <div class="sk-name">AI Skills</div>
+        </div>
+		  <div class="skill-card">
+          <img src="img/capcut.png" alt="Capcut" />
+          <div class="sk-name">CapCut</div>
+        </div>
+		  <div class="skill-card">
+          <img src="img/figma.png" alt="Figma" />
+          <div class="sk-name">Figma</div>
+        </div>
+		  <div class="skill-card">
+          <img src="img/words.png" alt="Microsoft Word" />
+          <div class="sk-name">Microsoft Word</div>
+        </div>
+		  <div class="skill-card">
+          <img src="img/excel.png" alt="Excel" />
+          <div class="sk-name">Excel</div>
+        </div>
+		  <div class="skill-card">
+          <img src="img/powerpoint.png" alt="PowerPoint" />
+          <div class="sk-name">PowerPoint</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="extras">
+    <div class="section-wrap">
+      <span class="section-tag reveal">Beyond the Classroom</span>
+      <h2 class="section-title reveal">Extra<span>curricular</span></h2>
+      <div class="purple-bar reveal"></div>
+      <div class="extras-grid reveal">
+        <div class="extra-card"><div class="ex-year">2026</div><div class="ex-title">Head Bureau of Logistic</div><div class="ex-event">BetaFiesta 2.0</div></div>
+        <div class="extra-card"><div class="ex-year">2025</div><div class="ex-title">Logistic Junior Crew</div><div class="ex-event">Next Gen Talk 1.0</div></div>
+		<div class="extra-card"><div class="ex-year">2025</div><div class="ex-title">Johan Tarik Tali</div><div class="ex-event">Sukan Kolej</div></div>
+        <div class="extra-card"><div class="ex-year">2024</div><div class="ex-title">Logistic Junior Crew</div><div class="ex-event">Tetrabit</div></div>
+        <div class="extra-card"><div class="ex-year">2024</div><div class="ex-title">Quarter-finalist, Volleyball</div><div class="ex-event">Sukan Program</div></div>
+        <div class="extra-card"><div class="ex-year">2024</div><div class="ex-title">Quarter-finalist, MLBB</div><div class="ex-event">Sukan Antara Fakulti</div></div>
+		<div class="extra-card"><div class="ex-year">2024</div><div class="ex-title">Third Place HandBall</div><div class="ex-event">MSSWP</div></div>
+		<div class="extra-card"><div class="ex-year">2024</div><div class="ex-title">Scout Chairman</div><div class="ex-event">SMKPP 5(1)</div></div>
+		<div class="extra-card"><div class="ex-year">2024</div><div class="ex-title">Kawad Kaki Fire Fighter</div><div class="ex-event">Merdeka (Peringkat Negeri)</div></div>
+		<div class="extra-card"><div class="ex-year">2023</div><div class="ex-title">Second Place HandBall</div><div class="ex-event">MSSWP</div></div>
+        <div class="extra-card"><div class="ex-year">2023</div><div class="ex-title">Fourth Place, Haka Fire Fighter</div><div class="ex-event">International Competition</div></div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+  <div class="section-wrap">
+    <span class="section-tag reveal">Career</span>
+    <h2 class="section-title reveal">Work <span>Experience</span></h2>
+    <div class="purple-bar reveal"></div>
+    <div class="exp-list reveal">
+
+     
+      <!-- 1. Freelance Web Designer  -->
+      <div class="exp-card">
+        <div class="exp-left">
+          <div class="exp-year">2025</div>
+          <div class="exp-dot"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Freelance Web Designer</div>
+          <div class="exp-company">Self-Employed</div>
+          <div class="exp-desc">Designed and developed responsive portfolio and landing pages using HTML, CSS, and JavaScript. Managed the process from wireframing and layout planning to final deployment, with a focus on clear UI and smooth user experience.</div>
+          <div class="exp-tags">
+            <span class="exp-tag">Web Design</span>
+            <span class="exp-tag">HTML•CSS•JS</span>
+            <span class="exp-tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+		
+	<!-- 2. Part-time Event Photographer -->
+		<div class="exp-card">
+        <div class="exp-left">
+          <div class="exp-year">2025 – 2026</div>
+          <div class="exp-dot"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Part-time Event Photographer</div>
+          <div class="exp-company">Freelance</div>
+          <div class="exp-desc">Shot using a standard 18-55mm lens at f/3.5. Focus was placed on composition and lighting to compensate for the limited aperture, demonstrating the ability to achieve cinematic results with entry-level gear.</div>
+          <div class="exp-tags">
+            <span class="exp-tag">Photography</span>
+            <span class="exp-tag">Post-Processing</span>
+            <span class="exp-tag">Event Coverage</span>
+          </div>
+        </div>
+      </div>
+		
+	<!-- 3. Event Management (2024) -->
+      <div class="exp-card">
+        <div class="exp-left">
+          <div class="exp-year">2024</div>
+          <div class="exp-dot"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Event Management Assistant</div>
+          <div class="exp-company">Event Planning Team</div>
+          <div class="exp-desc">Gained foundational experience in event planning and execution. Assisted in multi-tasking operational duties, ensuring smooth coordination, and resolving on-ground issues to maintain high event success.</div>
+          <div class="exp-tags">
+            <span class="exp-tag">Coordination</span>
+            <span class="exp-tag">Problem Solving</span>
+            <span class="exp-tag">Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Kitchen Helper (2024) -->
+      <div class="exp-card">
+        <div class="exp-left">
+          <div class="exp-year">2024</div>
+          <div class="exp-dot"></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Kitchen Helper</div>
+          <div class="exp-company">Food &amp; Beverage Services (Dorsett Putrajaya)</div>
+          <div class="exp-desc">Worked in a fast-paced environment requiring strong discipline, time management, and the ability to operate under pressure while maintaining operational efficiency and hygiene standards.</div>
+          <div class="exp-tags">
+            <span class="exp-tag">Time Management</span>
+            <span class="exp-tag">Discipline</span>
+            <span class="exp-tag">High-Pressure Work</span>
+          </div>
+        </div>
+      </div>
+
+		
+    </div>
+  </div>
+</section>
+
+  <div class="section-divider"></div>
+
+  <section id="contact">
+    <div class="section-wrap">
+      <span class="section-tag reveal">Get In Touch</span>
+      <h2 class="section-title reveal">Let's <span>Connect</span></h2>
+      <div class="purple-bar reveal"></div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <p>I am currently <strong>open for internship opportunities</strong> in <strong>web design, digital content creation, photography, and video production</strong>. If you are looking for a proactive intern with creative and technical skills, I would be glad to connect.</p>
+          <button type="button" class="btn btn-primary" id="vrOpenBtn">&#9654; Watch My Video Resume</button>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/luqmanalhadee/" target="_blank" rel="noopener noreferrer"><span class="clink-icon"><img src="img/linkedin.png" alt="LinkedIn" /></span> LinkedIn</a>
+            <a href="https://www.instagram.com/luqqies_man" target="_blank" rel="noopener noreferrer"><span class="clink-icon"><img src="img/instagram.png" alt="Instagram" /></span> @luqqies_man</a>
+            <a href="mailto:luqmanalhadee@gmail.com"><span class="clink-icon"><img src="img/email.png" alt="Email" /></span> luqmanalhadee@gmail.com</a>
+          </div>
+        </div>
+        <form class="contact-form contact-form-card" id="contactForm">
+          <input type="hidden" name="access_key" value="1bbb3935-ab42-4f14-8f8d-5a3f8fe25ff1" />
+          <input type="hidden" name="subject" value="New portfolio enquiry" />
+          <div class="contact-form-heading">
+            <span>Send a message</span>
+            <p>I am currently open for <strong>internship opportunities</strong></p>
+          </div>
+          <label for="contactName">Name</label>
+          <input id="contactName" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+          <label for="contactDetails">Contact</label>
+          <input id="contactDetails" name="contact" type="text" placeholder="Your email or phone number" autocomplete="email" required />
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" placeholder="How can I help you?" required></textarea>
+          <button type="submit">Send Message <span aria-hidden="true">&rarr;</span></button>
+          <p class="contact-form-status" id="contactFormStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Luqman Al-Hadee · All rights reserved.</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
